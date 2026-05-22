@@ -36,6 +36,32 @@ Sensitive data like API keys should be stored in `.env`.
 - `M` = Modified file
 - `U` = Untracked file
 
+### Git Workflow Used
+
+Stage files:
+
+```bash
+git add .
+```
+
+Check repository status:
+
+```bash
+git status
+```
+
+Commit changes:
+
+```bash
+git commit -m "message"
+```
+
+Push to GitHub:
+
+```bash
+git push
+```
+
 ### Virtual Environment
 
 `venv` isolates Python dependencies per project.
