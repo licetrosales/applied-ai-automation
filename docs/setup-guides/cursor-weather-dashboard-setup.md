@@ -19,6 +19,39 @@ Explore AI-assisted software development using Cursor AI and Flask.
 - AI model: default Auto model
 - Cursor Agent used for code generation
 
+### Cursor Version Information
+
+| Component | Version |
+|---|---|
+| Cursor | 3.5.17 |
+| VSCode Base | 1.105.1 |
+| Build Type | Stable |
+| Layout | glass |
+| OS | macOS Darwin arm64 25.5.0 |
+
+### Workflow Notes
+
+The newer Cursor "glass" layout differs from many tutorials online.
+
+Some UI elements such as:
+- terminal access
+- repository explorer
+- Git panels
+
+were less immediately visible compared to traditional VSCode layouts.
+
+Because of this, several workflows were performed directly through the integrated terminal instead of GUI buttons.
+
+### Important Discovery
+
+The repository explorer was opened using:
+
+```text
+CMD + SHIFT + E
+```
+
+This shortcut became essential for navigating project structure in the glass layout UI.
+
 ## Initial Prompt
 
 ```text
