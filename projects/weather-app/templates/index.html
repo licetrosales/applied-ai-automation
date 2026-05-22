@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Search Weather — Skyline{% endblock %}
+
+{% block content %}
+  <section class="hero">
+    <h1 class="hero-title">Current weather, anywhere</h1>
+    <p class="hero-subtitle">
+      Search by city name to see live conditions from WeatherAPI.
+    </p>
+
+    <form
+      class="search-form"
+      action="{{ url_for('weather_lookup') }}"
+      method="get"
+      role="search"
+    >
+      <label for="city" class="visually-hidden">City</label>
+      <div class="search-row">
+        <input
+          type="search"
+          id="city"
+          name="city"
+          class="search-input"
+          placeholder="e.g. London, Tokyo, New York"
+          value="{{ request.args.get('city', '') }}"
+          autocomplete="off"
+          required
+          autofocus
+        />
+        <button type="submit" class="btn btn-primary">Get weather</button>
+      </div>
+    </form>
+
+    <p class="hint">Try a city and country for clarity, e.g. <em>Paris, France</em></p>
+  </section>
+{% endblock %}

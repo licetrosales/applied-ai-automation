@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}{{ location.name }} Weather — Skyline{% endblock %}
+
+{% block content %}
+  <section class="weather-panel">
+    <a href="{{ url_for('home') }}" class="back-link">← Search another city</a>
+
+    <header class="weather-header">
+      <div class="weather-location">
+        <h1 class="weather-city">{{ location.name }}</h1>
+        <p class="weather-region">
+          {{ location.region }}{% if location.region %}, {% endif %}{{ location.country }}
+        </p>
+        <p class="weather-localtime">
+          Local time: {{ location.localtime }}
+        </p>
+      </div>
+      <img
+        class="weather-icon"
+        src="{{ condition.icon }}"
+        alt="{{ condition.text }}"
+        width="128"
+        height="128"
+      />
+    </header>
+
+    <div class="weather-primary">
+      <span class="temp-display">{{ current.temp_c | round(0) | int }}°</span>
+      <span class="temp-unit">C</span>
+      <p class="condition-text">{{ condition.text }}</p>
+      <p class="feels-like">Feels like {{ current.feelslike_c | round(0) | int }}°C</p>
+    </div>
+
+    <dl class="stats-grid">
+      <div class="stat">
+        <dt>Humidity</dt>
+        <dd>{{ current.humidity }}%</dd>
+      </div>
+      <div class="stat">
+        <dt>Wind</dt>
+        <dd>{{ current.wind_kph }} km/h {{ current.wind_dir }}</dd>
+      </div>
+      <div class="stat">
+        <dt>Pressure</dt>
+        <dd>{{ current.pressure_mb }} mb</dd>
+      </div>
+      <div class="stat">
+        <dt>Visibility</dt>
+        <dd>{{ current.vis_km }} km</dd>
+      </div>
+      <div class="stat">
+        <dt>UV index</dt>
+        <dd>{{ current.uv }}</dd>
+      </div>
+      <div class="stat">
+        <dt>Cloud cover</dt>
+        <dd>{{ current.cloud }}%</dd>
+      </div>
+      <div class="stat">
+        <dt>Precipitation</dt>
+        <dd>{{ current.precip_mm }} mm</dd>
+      </div>
+      <div class="stat">
+        <dt>Coordinates</dt>
+        <dd>{{ location.lat }}, {{ location.lon }}</dd>
+      </div>
+    </dl>
+
+    <form
+      class="search-form search-form--inline"
+      action="{{ url_for('weather_lookup') }}"
+      method="get"
+    >
+      <div class="search-row">
+        <input
+          type="search"
+          name="city"
+          class="search-input"
+          placeholder="Search another city"
+          value="{{ city_query }}"
+          required
+        />
+        <button type="submit" class="btn btn-primary">Search</button>
+      </div>
+    </form>
+  </section>
+{% endblock %}
