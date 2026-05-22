@@ -32,9 +32,17 @@ Sensitive data like API keys should be stored in `.env`.
 
 ### Git Status Symbols
 
-- `A` = Added file
-- `M` = Modified file
-- `U` = Untracked file
+| Symbol | Meaning |
+|---|---|
+| `U` | Untracked file (new file not yet added to Git) |
+| `A` | Added/staged file |
+| `M` | Modified file |
+
+### Git States
+
+- **Untracked** → Git has never tracked the file
+- **Unstaged** → File changed but not prepared for commit
+- **Staged** → Ready to commit
 
 ### Git Workflow Used
 
@@ -61,7 +69,31 @@ Push to GitHub:
 ```bash
 git push
 ```
+## Useful Cursor Shortcuts (macOS)
 
+| Shortcut | Purpose |
+|---|---|
+| `CMD + SHIFT + E` | Open file explorer / repository structure |
+| `CMD + SHIFT + P` | Open Command Palette |
+| `CTRL + \`` | Open integrated terminal or View → Terminal|
+| `CMD + S` | Save current file |
+| `CMD + /` | Toggle code comments |
+| `CMD + B` | Toggle sidebar visibility |
+| `CMD + P` | Quick open files |
+| `CMD + SHIFT + F` | Search across project |
+
+
+
+
+### Most Useful During This Project
+
+The most important shortcut discovered during setup was:
+
+```text
+CMD + SHIFT + E
+```
+
+This revealed the hidden repository file explorer in Cursor's newer "glass" layout UI.
 ### Virtual Environment
 
 `venv` isolates Python dependencies per project.
