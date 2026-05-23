@@ -69,6 +69,31 @@ Push to GitHub:
 ```bash
 git push
 ```
+### Pulling Latest Changes From GitHub
+#### Update Local Repository
+
+If changes were pushed to GitHub and you want them on your laptop:
+```bash
+git pull
+```
+This downloads and updates your local repository with the newest remote changes.
+
+#### Recommended Workflow
+
+Before pulling:
+```bash
+git status
+```
+If there are uncommitted changes:
+
+- commit them first
+- or stash them
+
+Then:
+```bash
+git pull
+```
+
 ## Useful Cursor Shortcuts (macOS)
 
 | Shortcut | Purpose |
