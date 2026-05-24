@@ -138,6 +138,43 @@ Human responsibilities still include:
 - documenting
 - committing changes properly
 
+### Flask Server Control
+#### Start App
+
+Inside project folder:
+```bash
+python app.py
+```
+
+#### Stop App
+
+While terminal is running Flask:
+```text
+CTRL + C
+```
+This safely stops the Flask development server.
+
+### Exit Virtual Environment
+
+After stopping Flask:
+```text
+deactivate
+```
+This returns terminal to the normal macOS shell environment.
+
+### Full Daily Workflow Example
+```bash
+cd projects/weather-app
+source venv/bin/activate
+git pull
+python app.py
+```
+After work:
+```text
+CTRL + C
+deactivate
+```
+
 ## Reflection
 
 This exercise demonstrated how AI can accelerate software development lifecycle tasks:
