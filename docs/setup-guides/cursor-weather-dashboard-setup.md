@@ -31,9 +31,7 @@ Explore AI-assisted software development using Cursor AI and Flask.
 
 ### Workflow Notes
 
-The newer Cursor "glass" layout differs from many tutorials online.
-
-Some UI elements such as:
+The newer Cursor "glass" layout was used for the implementation. It differs form the classic version in some UI elements such as:
 - terminal access
 - repository explorer
 - Git panels
