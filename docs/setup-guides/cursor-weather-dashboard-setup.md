@@ -154,12 +154,135 @@ python [app.py](http://app.py)
 [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ```
+## Additional Workflow Notes
 
-## Observations
+### Reopening Existing Flask Project
 
-- Cursor generated backend and frontend automatically
-- Flask routes connected templates and API calls
-- HTML templates used Jinja syntax
-- CSS styling created a modern UI automatically
-- Git workflow integrated well with Cursor
+When reopening the project after some time, the following steps were required:
+
+### Navigate to project directory
+
+```bash
+cd ~/Documents/GitHub/applied-ai-automation/projects/weather-app
+```
+
+### Activate existing virtual environment
+
+```bash
+source venv/bin/activate
+```
+
+### Reinstall dependencies (if required)
+
+```bash
+pip install -r requirements.txt
+```
+
+Observation:
+
+* dependencies may need reinstalling after Python updates or environment changes
+* `ModuleNotFoundError` indicated missing packages inside the virtual environment
+
+### Run Flask application
+
+```bash
+python app.py
+```
+
+Expected terminal output:
+
+```text
+Running on http://127.0.0.1:5000
+```
+
+### Browser Access Observation
+
+The application initially returned:
+
+```text
+HTTP ERROR 403
+```
+
+Resolution:
+
+* Flask server was running correctly
+* opening the URL in a private/incognito browser window resolved the issue
+
+---
+
+## Git Workflow Used For UI Improvements
+
+### Synchronize local repository
+
+```bash
+git fetch --all
+git pull
+```
+
+Observation:
+
+* `git fetch --all` updates remote branch information locally
+* `git pull` merges latest changes into the current branch
+
+### Create feature branch
+
+```bash
+git checkout -b improve-ui
+```
+
+Observation:
+
+* UI changes were isolated from the `main` branch
+* feature branch workflow reduced risk during experimentation
+
+---
+
+## AI-Assisted UI Improvement Prompt
+
+```text
+I want to improve the UI of this Flask weather app step by step as a learning exercise.
+
+Please improve only:
+
+- templates/index.html
+- static/css/style.css
+
+Goals:
+
+- modern weather dashboard appearance
+- blue and gold accents
+- improved typography and spacing
+- subtle hover animations
+- better responsive layout
+- weather-related visual feeling
+
+Requirements:
+
+- keep the Flask backend unchanged
+- explain every change before editing
+- make incremental improvements
+- avoid rewriting the whole project
+- suggest a git commit message afterward
+```
+
+---
+## UI Improvements Introduced
+
+Cursor AI generated improvements including:
+
+- refined typography and spacing
+- blue/gold design palette
+- weather-themed visual atmosphere
+- responsive hero layout
+- hover animations and micro-interactions
+- enhanced CSS variable organization
+
+## Key Technical Learnings
+- virtual environments are essential for Python dependency isolation
+- pip install -r requirements.txt is often required after environment recreation
+- Git feature branches reduce risk during experimentation
+- reviewing AI-generated diffs improves learning and code comprehension
+- structured prompts significantly improve AI output quality
+- Cursor Auto mode accelerates frontend iteration workflows
+
 
