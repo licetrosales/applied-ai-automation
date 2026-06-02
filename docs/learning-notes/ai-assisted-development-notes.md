@@ -94,6 +94,22 @@ Then:
 git pull
 ```
 
+## Recommended Git Workflow Before Changes
+
+Create feature branch:
+```bash
+git checkout -b improve-ui
+```
+Check changes:
+```bash
+git status
+```bash
+Save changes:
+```bash
+git add .
+git commit -m "feat: improve weather app UI"
+```
+
 ## Useful Cursor Shortcuts (macOS)
 
 | Shortcut | Purpose |
