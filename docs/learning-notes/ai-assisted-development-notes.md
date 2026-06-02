@@ -109,6 +109,13 @@ Save changes:
 git add .
 git commit -m "feat: improve weather app UI"
 ```
+Push branch to GitHub
+```bash
+git push -u origin improve-ui
+```
+This uploads your feature branch to GitHub.
+
+---
 
 ## Useful Cursor Shortcuts (macOS)
 
