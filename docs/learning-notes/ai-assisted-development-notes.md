@@ -103,7 +103,7 @@ git checkout -b improve-ui
 Check changes:
 ```bash
 git status
-```bash
+```
 Save changes:
 ```bash
 git add .
