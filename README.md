@@ -35,7 +35,6 @@ The primary goal is to strengthen practical engineering skills through hands-on 
 ## Programming and Development
 
 - Python
-- VS Code
 - Cursor IDE
 - Git
 - GitHub
