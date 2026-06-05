@@ -3,11 +3,18 @@
 {% block title %}Search Weather — Skyline{% endblock %}
 
 {% block content %}
-  <section class="hero">
+  <section class="hero hero-card">
+    <p class="hero-kicker">Weather Dashboard</p>
     <h1 class="hero-title">Current weather, anywhere</h1>
     <p class="hero-subtitle">
       Search by city name to see live conditions from WeatherAPI.
     </p>
+
+    <div class="hero-moods" aria-hidden="true">
+      <span class="mood-chip">Sun</span>
+      <span class="mood-chip">Wind</span>
+      <span class="mood-chip">Cloud</span>
+    </div>
 
     <form
       class="search-form"
