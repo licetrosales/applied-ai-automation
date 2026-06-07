@@ -116,6 +116,86 @@ git push -u origin improve-ui
 This uploads your feature branch to GitHub.
 
 ---
+## Merging a Feature Branch into Main
+
+### Step 1: Switch to Main
+
+Before merging, move to the main branch:
+
+```bash
+git checkout main
+```
+
+### Step 2: Get Latest Changes
+
+Update your local main branch:
+
+```bash
+git pull origin main
+```
+
+### Step 3: Merge the Feature Branch
+
+Merge your feature branch into main:
+
+```bash
+git merge improve-ui
+```
+
+Git may open a merge message editor.
+
+To accept the default merge message in Vim:
+
+1. Press `Esc`
+2. Type:
+
+```text
+:wq
+```
+
+3. Press `Enter`
+
+### Step 4: Verify Merge
+
+Check repository status:
+
+```bash
+git status
+```
+
+Expected result:
+
+```text
+On branch main
+nothing to commit, working tree clean
+```
+
+### Step 5: Push Changes to GitHub
+
+Upload the merged branch:
+
+```bash
+git push origin main
+```
+
+### Complete Merge Workflow
+
+```bash
+git checkout main
+git pull origin main
+git merge improve-ui
+git status
+git push origin main
+```
+
+### Why This Workflow Matters
+
+- Keeps main up to date
+- Preserves feature branch history
+- Reduces merge conflicts
+- Ensures GitHub and local repositories stay synchronized
+
+---
 
 ## Useful Cursor Shortcuts (macOS)
 
