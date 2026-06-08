@@ -1,6 +1,12 @@
 # AI-Assisted Development Learning Notes
 
-## Concepts Learned
+## Goal
+
+Document concepts learned while building a Flask Weather Dashboard using Cursor AI.
+
+---
+
+## Flask Concepts Learned
 
 ### Flask Routes
 
@@ -26,258 +32,90 @@ Example:
 
 ### Environment Variables
 
-Sensitive data like API keys should be stored in `.env`.
+Sensitive information such as API keys should be stored in environment files.
 
-`.env` should never be committed to GitHub.
-
-### Git Status Symbols
-
-| Symbol | Meaning |
-|---|---|
-| `U` | Untracked file (new file not yet added to Git) |
-| `A` | Added/staged file |
-| `M` | Modified file |
-
-### Git States
-
-- **Untracked** → Git has never tracked the file
-- **Unstaged** → File changed but not prepared for commit
-- **Staged** → Ready to commit
-
-### Git Workflow Used
-
-Stage files:
-
-```bash
-git add .
-```
-
-Check repository status:
-
-```bash
-git status
-```
-
-Commit changes:
-
-```bash
-git commit -m "message"
-```
-
-Push to GitHub:
-
-```bash
-git push
-```
-### Pulling Latest Changes From GitHub
-#### Update Local Repository
-
-If changes were pushed to GitHub and you want them on your laptop:
-```bash
-git pull
-```
-This downloads and updates your local repository with the newest remote changes.
-
-#### Recommended Workflow
-
-Before pulling:
-```bash
-git status
-```
-If there are uncommitted changes:
-
-- commit them first
-- or stash them
-
-Then:
-```bash
-git pull
-```
----
-
-## Creating a Feature Branch
-
-Create feature branch:
-```bash
-git checkout -b improve-ui
-```
-Check changes:
-```bash
-git status
-```
-Save changes:
-```bash
-git add .
-git commit -m "feat: improve weather app UI"
-```
-Push branch to GitHub
-```bash
-git push -u origin improve-ui
-```
-This uploads your feature branch to GitHub.
-
----
-## Merging a Feature Branch into Main
-
-### Step 1: Switch to Main
-
-Before merging, move to the main branch:
-
-```bash
-git checkout main
-```
-
-### Step 2: Get Latest Changes
-
-Update your local main branch:
-
-```bash
-git pull origin main
-```
-
-### Step 3: Merge the Feature Branch
-
-Merge your feature branch into main:
-
-```bash
-git merge improve-ui
-```
-
-Git may open a merge message editor.
-
-To accept the default merge message in Vim:
-
-1. Press `Esc`
-2. Type:
+Example:
 
 ```text
-:wq
+.env
 ```
 
-3. Press `Enter`
+Key lesson:
 
-### Step 4: Verify Merge
+- API keys should never be committed to GitHub.
+- Environment variables separate configuration from source code.
 
-Check repository status:
-
-```bash
-git status
-```
-
-Expected result:
-
-```text
-On branch main
-nothing to commit, working tree clean
-```
-
-### Step 5: Push Changes to GitHub
-
-Upload the merged branch:
-
-```bash
-git push origin main
-```
-
-### Complete Merge Workflow
-
-```bash
-git checkout main
-git pull origin main
-git merge improve-ui
-git status
-git push origin main
-```
 ---
 
-## Useful Cursor Shortcuts (macOS)
+## Cursor Development Workflow
+
+### Useful Cursor Shortcuts (macOS)
 
 | Shortcut | Purpose |
-|---|---|
-| `CMD + SHIFT + E` | Open file explorer / repository structure |
-| `CMD + SHIFT + P` | Open Command Palette |
-| `CTRL + \`` | Open integrated terminal or View → Terminal|
-| `CMD + S` | Save current file |
-| `CMD + /` | Toggle code comments |
-| `CMD + B` | Toggle sidebar visibility |
-| `CMD + P` | Quick open files |
-| `CMD + SHIFT + F` | Search across project |
+|-----------|-----------|
+| CMD + SHIFT + E | Open repository explorer |
+| CMD + SHIFT + P | Open Command Palette |
+| CTRL + ` | Open integrated terminal |
+| CMD + S | Save file |
+| CMD + / | Toggle comments |
+| CMD + B | Toggle sidebar |
+| CMD + P | Quick file search |
+| CMD + SHIFT + F | Search across project |
 
-
-
-
-### Most Useful During This Project
-
-The most important shortcut discovered during setup was:
+### Most Useful Discovery
 
 ```text
 CMD + SHIFT + E
 ```
 
-This revealed the hidden repository file explorer in Cursor's newer "glass" layout UI.
-### Virtual Environment
+This shortcut revealed the project file explorer in Cursor's newer interface.
 
-`venv` isolates Python dependencies per project.
+---
 
-### AI Workflow Observation
+## Virtual Environments
 
-Cursor can:
-- generate full-stack applications
-- create file structures
-- generate documentation
-- scaffold Flask apps quickly
+Python virtual environments isolate project dependencies.
 
-Human responsibilities still include:
-- understanding architecture
-- validating code
-- debugging
-- documenting
-- committing changes properly
+Example:
 
-### Flask Server Control
-#### Start App
-
-Inside project folder:
 ```bash
-python app.py
+python -m venv venv
 ```
 
-#### Stop App
+Benefits:
 
-While terminal is running Flask:
-```text
-CTRL + C
-```
-This safely stops the Flask development server.
+- Prevents dependency conflicts
+- Keeps project environments independent
+- Improves reproducibility
 
-### Exit Virtual Environment
+---
 
-After stopping Flask:
-```text
-deactivate
-```
-This returns terminal to the normal macOS shell environment.
+## AI-Assisted Development Observations
 
-### Full Daily Workflow Example
-```bash
-cd projects/weather-app
-source venv/bin/activate
-git pull
-python app.py
-```
-After work:
-```text
-CTRL + C
-deactivate
-```
+During this project, Cursor was able to:
+
+- Generate Flask application scaffolding
+- Create project structures
+- Generate HTML templates
+- Produce CSS styling
+- Generate documentation drafts
+- Assist with API integration
+
+### Human Responsibilities
+
+AI accelerated development, but several tasks still required human judgment:
+
+- Understanding application architecture
+- Validating generated code
+- Debugging issues
+- Managing project structure
+- Writing and maintaining documentation
+- Reviewing AI-generated output
+
+---
 
 ## Reflection
 
-This exercise demonstrated how AI can accelerate software development lifecycle tasks:
-- scaffolding
-- UI generation
-- boilerplate setup
-- API integration
-- documentation
+This project demonstrated how AI can accelerate software development by reducing boilerplate work and speeding up prototyping.
 
-However, understanding concepts remains essential.
+The most important lesson was that AI increases productivity, but understanding the underlying concepts remains essential for debugging, validation, and long-term maintenance.
