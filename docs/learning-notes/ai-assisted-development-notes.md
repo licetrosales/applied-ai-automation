@@ -93,8 +93,9 @@ Then:
 ```bash
 git pull
 ```
+---
 
-## Recommended Git Workflow Before Changes
+## Creating a Feature Branch
 
 Create feature branch:
 ```bash
