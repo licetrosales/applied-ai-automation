@@ -1,243 +1,134 @@
-# Cursor + Flask Weather Dashboard Setup (macOS)
+# Cursor + Flask Weather Dashboard (macOS)
 
 ## Goal
 
-Explore AI-assisted software development using Cursor AI and Flask.
+Build and run a Flask-based weather dashboard using Cursor AI, Python, and WeatherAPI.
 
 ## Tools Used
 
 - Cursor IDE
 - Python 3
 - Flask
-- [WeatherAPI.com](http://WeatherAPI.com)
-- Git + GitHub
+- WeatherAPI
+- Git
+- GitHub
 - macOS
 
-## Cursor Configuration
-
-- Cursor mode: Auto
-- AI model: default Auto model
-- Cursor Agent used for code generation
-
-### Cursor Version Information
+## Development Environment
 
 | Component | Version |
-|---|---|
+|------------|------------|
 | Cursor | 3.5.17 |
 | VSCode Base | 1.105.1 |
 | Build Type | Stable |
-| Layout | glass |
+| Layout | Glass |
 | OS | macOS Darwin arm64 25.5.0 |
 
-### Workflow Notes
+## Cursor Configuration
 
-The newer Cursor "glass" layout was used for the implementation. It differs form the classic version in some UI elements such as:
-- terminal access
-- repository explorer
-- Git panels
+- Cursor Mode: Auto
+- AI Model: Default Auto Model
+- Cursor Agent used for code generation and project scaffolding
 
-were less immediately visible compared to traditional VSCode layouts.
+The project was developed using Cursor's Glass layout. Several development tasks were performed through the integrated terminal.
 
-Because of this, several workflows were performed directly through the integrated terminal instead of GUI buttons.
-
-### Important Discovery
-
-The repository explorer was opened using:
+## Initial AI Prompt
 
 ```text
-CMD + SHIFT + E
-```
-
-This shortcut became essential for navigating project structure in the glass layout UI.
-
-## Initial Prompt
-
-```text
-
-Create a Flask weather dashboard using [WeatherAPI.com](http://WeatherAPI.com).
+Create a Flask weather dashboard using WeatherAPI.com.
 
 Requirements:
 
 - Use Python and Flask
-
 - Create routes for home and weather lookup
-
 - Use environment variables for API keys
-
 - Read WEATHER_API_KEY from a .env file
-
 - Include requirements.txt
-
 - Include .env.example
-
 - Include templates and CSS
-
 - Create a modern responsive UI
-
 - Allow users to search by city
-
 - Explain how to run locally
 
 Use WeatherAPI current weather endpoint.
 
 Provide all related files.
-
 ```
 
-## Generated Project Structure
+## Project Structure
 
 ```text
-
 projects/weather-app/
 
-├── [app.py](http://app.py)
+├── app.py
 ├── requirements.txt
 ├── .env.example
-├── [README.md](http://README.md)
+├── README.md
 ├── templates/
 │   ├── base.html
 │   ├── index.html
 │   └── weather.html
 └── static/css/
     └── style.css
-
 ```
 
-## Setup Steps
+## Installation
 
-### Create virtual environment
+### Create Virtual Environment
 
 ```bash
-
 python3 -m venv venv
-
 ```
 
-### Activate environment
+### Activate Environment
 
 ```bash
-
 source venv/bin/activate
-
 ```
 
-### Install dependencies
+### Install Dependencies
 
 ```bash
-
 pip install -r requirements.txt
-
 ```
 
-### Configure API key
+### Configure API Key
 
-Create `.env`:
+Create a `.env` file:
 
 ```env
-
 WEATHER_API_KEY=your_api_key_here
-
 ```
 
-### Run application
+## Verification
 
-```bash
-
-python [app.py](http://app.py)
-
-```
-
-### Open in browser
-
-```text
-
-[http://127.0.0.1:5000](http://127.0.0.1:5000)
-
-```
-## Additional Workflow Notes
-
-### Reopening Existing Flask Project
-
-When reopening the project after some time, the following steps were required:
-
-### Navigate to project directory
-
-```bash
-cd ~/Documents/GitHub/applied-ai-automation/projects/weather-app
-```
-
-### Activate existing virtual environment
-
-```bash
-source venv/bin/activate
-```
-
-### Reinstall dependencies (if required)
-
-```bash
-pip install -r requirements.txt
-```
-
-Observation:
-
-* dependencies may need reinstalling after Python updates or environment changes
-* `ModuleNotFoundError` indicated missing packages inside the virtual environment
-
-### Run Flask application
+### Run Application
 
 ```bash
 python app.py
 ```
 
-Expected terminal output:
+Expected output:
 
 ```text
 Running on http://127.0.0.1:5000
 ```
 
-### Browser Access Observation
-
-The application initially returned:
+### Open in Browser
 
 ```text
-HTTP ERROR 403
+http://127.0.0.1:5000
 ```
 
-Resolution:
+Verify that:
 
-* Flask server was running correctly
-* opening the URL in a private/incognito browser window resolved the issue
+- The Flask application loads successfully.
+- Weather data can be retrieved for a city search.
+- The WeatherAPI integration returns current weather information.
 
----
+## AI-Assisted Frontend Improvements
 
-## Git Workflow Used For UI Improvements
-
-### Synchronize local repository
-
-```bash
-git fetch --all
-git pull
-```
-
-Observation:
-
-* `git fetch --all` updates remote branch information locally
-* `git pull` merges latest changes into the current branch
-
-### Create feature branch
-
-```bash
-git checkout -b improve-ui
-```
-
-Observation:
-
-* UI changes were isolated from the `main` branch
-* feature branch workflow reduced risk during experimentation
-
----
-
-## AI-Assisted UI Improvement Prompt
+### UI Improvement Prompt
 
 ```text
 I want to improve the UI of this Flask weather app step by step as a learning exercise.
@@ -265,24 +156,22 @@ Requirements:
 - suggest a git commit message afterward
 ```
 
----
-## UI Improvements Introduced
+### Improvements Introduced
 
-Cursor AI generated improvements including:
+Cursor AI generated frontend enhancements including:
 
-- refined typography and spacing
-- blue/gold design palette
-- weather-themed visual atmosphere
-- responsive hero layout
-- hover animations and micro-interactions
-- enhanced CSS variable organization
+- Improved typography and spacing
+- Blue and gold visual theme
+- Responsive dashboard layout
+- Hover animations and micro-interactions
+- Improved visual hierarchy
+- Better CSS organization and maintainability
 
-## Key Technical Learnings
-- virtual environments are essential for Python dependency isolation
-- pip install -r requirements.txt is often required after environment recreation
-- Git feature branches reduce risk during experimentation
-- reviewing AI-generated diffs improves learning and code comprehension
-- structured prompts significantly improve AI output quality
-- Cursor Auto mode accelerates frontend iteration workflows
+## Key Learnings
 
-
+- Virtual environments isolate Python project dependencies.
+- Environment variables should be used to protect API keys.
+- Flask provides a lightweight framework for web application development.
+- Well-structured prompts improve AI-generated code quality.
+- Cursor AI accelerates application scaffolding and UI iteration.
+- Incremental AI-assisted improvements help maintain control over project evolution.
