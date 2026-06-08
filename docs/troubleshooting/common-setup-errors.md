@@ -215,3 +215,72 @@ pip install -r requirements.txt
 
 ```
 
+---
+
+---
+
+## Git Merge Opened Vim Editor
+
+### Problem
+
+After running:
+
+```bash
+git merge improve-ui
+```
+
+Git opened a text editor and the terminal appeared frozen.
+
+No new commands could be entered.
+
+### Cause
+
+Git opened the Vim editor to confirm the merge commit message.
+
+The merge was waiting for the commit message to be accepted.
+
+### Fix
+
+Save and exit Vim:
+
+1. Press:
+
+```text
+Esc
+```
+
+2. Type:
+
+```text
+:wq
+```
+
+3. Press:
+
+```text
+Enter
+```
+
+Git will complete the merge operation.
+
+### Verification
+
+Run:
+
+```bash
+git status
+```
+
+Expected result:
+
+```text
+On branch main
+nothing to commit, working tree clean
+```
+
+Then push the merge:
+
+```bash
+git push origin main
+```
+---
