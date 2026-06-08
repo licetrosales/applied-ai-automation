@@ -188,14 +188,6 @@ git merge improve-ui
 git status
 git push origin main
 ```
-
-### Why This Workflow Matters
-
-- Keeps main up to date
-- Preserves feature branch history
-- Reduces merge conflicts
-- Ensures GitHub and local repositories stay synchronized
-
 ---
 
 ## Useful Cursor Shortcuts (macOS)
