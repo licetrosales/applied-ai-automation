@@ -82,8 +82,14 @@ python3 -m venv venv
 
 ### Activate Environment
 
+Activate the virtual environment before installing dependencies or running the application.
+
 ```bash
 source venv/bin/activate
+```
+Expected prompt:
+```text
+(venv)
 ```
 
 ### Install Dependencies
@@ -104,6 +110,8 @@ WEATHER_API_KEY=your_api_key_here
 
 ### Run Application
 
+Start the Flask development server from the project root directory.
+
 ```bash
 python app.py
 ```
@@ -112,6 +120,20 @@ Expected output:
 
 ```text
 Running on http://127.0.0.1:5000
+```
+### Stop Application
+
+Stop the Flask development server:
+
+```text
+CTRL + C
+```
+### Deactivate Environment
+
+Exit the virtual environment when development work is finished:
+
+```bash
+deactivate
 ```
 
 ### Open in Browser
@@ -169,9 +191,9 @@ Cursor AI generated frontend enhancements including:
 
 ## Key Learnings
 
-- Virtual environments isolate Python project dependencies.
-- Environment variables should be used to protect API keys.
-- Flask provides a lightweight framework for web application development.
+- Virtual environments isolate project dependencies and improve reproducibility.
+- Environment variables protect sensitive configuration such as API keys.
+- Flask provides a lightweight framework for API-driven web applications.
 - Well-structured prompts improve AI-generated code quality.
-- Cursor AI accelerates application scaffolding and UI iteration.
-- Incremental AI-assisted improvements help maintain control over project evolution.
+- Cursor AI accelerates scaffolding, UI iteration, and documentation generation.
+- Human validation remains essential for architecture, debugging, and maintenance.
