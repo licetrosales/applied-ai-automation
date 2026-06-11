@@ -8,7 +8,7 @@ The workflow retrieves a random quote from the ZenQuotes API and sends it via Gm
 
 ## Workflow Architecture
 
-![Random Quote Email Automation Workflow](../images/random-quote-email-automation-workflow.png)
+![Random Quote Email Automation Workflow](../figures/random-quote-email-automation-workflow.png)
 
 **Figure 1:** Workflow that retrieves a random quote from ZenQuotes and sends it by email.
 
