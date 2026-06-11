@@ -7,8 +7,8 @@ This workflow uses an AI Agent to retrieve a random quote from the ZenQuotes API
 It demonstrates how an LLM can orchestrate external tools to complete a task.
 
 ## Workflow Architecture
-
-** Figure 1: AI Agent workflow that retrieves a random quote and sends it by email using external tools.
+![AI Agent Random Quote Email Automation Workflow](../figures/ai-agent-random-quote-email-workflow.png)
+** Figure 1:** AI Agent workflow that retrieves a random quote and sends it by email using external tools.
 
 ## Workflow Components
 
