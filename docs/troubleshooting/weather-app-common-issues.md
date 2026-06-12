@@ -1,221 +1,212 @@
-## Could not find requirements.txt
+# Weather App Troubleshooting Guide
+
+## Could Not Find requirements.txt
 
 ### Problem
 
 ```text
-
 Could not open requirements file
-
 ```
 
 ### Cause
 
-Terminal was opened in the wrong directory.
+The terminal was opened in the wrong directory.
 
-### Fix
+### Resolution
 
-Move into the Flask project folder first:
+Move into the Flask project directory:
 
 ```bash
-
 cd projects/weather-app
-
 ```
 
-Then run:
+Then install dependencies:
 
 ```bash
-
 pip install -r requirements.txt
-
 ```
+
+### Verification
+
+```bash
+pwd
+```
+
+Should display the weather-app directory and the installation should complete successfully.
 
 ---
 
-## Cursor file explorer hidden
+## Cursor File Explorer Hidden
 
 ### Problem
 
 Project files were not visible in the Cursor sidebar.
 
-### Fix
-
-Open Explorer with:
-
-```text
-
-CMD + SHIFT + E
-
-```
-
----
-
-## Git commands showed no changes
-
 ### Cause
 
-Files were already committed previously.
+The Explorer panel was accidentally closed or hidden.
+
+### Resolution
+
+Open the Explorer:
+
+```text
+CMD + SHIFT + E
+```
 
 ### Verification
 
-Use:
+Project files appear in the left sidebar.
+
+---
+
+## Git Commands Showed No Changes
+
+### Problem
+
+Git did not detect any modified files.
+
+### Cause
+
+Changes had already been committed.
+
+### Resolution
+
+Check repository status:
 
 ```bash
-
 git status
-
 ```
 
-If output shows:
+### Verification
+
+Expected output:
 
 ```text
-
-nothing to commit
-
+nothing to commit, working tree clean
 ```
 
-then repository is already clean.
-
 ---
 
----
-
-## Flask app showed HTTP 403 in browser
+## Flask App Showed HTTP 403
 
 ### Problem
 
 Browser displayed:
 
 ```text
-
 Access to 127.0.0.1 was denied
-
 HTTP ERROR 403
-
 ```
-
-even though Flask server was running.
 
 ### Cause
 
-The Flask application was not started correctly before opening the browser.
+Possible causes:
 
-In another case, browser cache or extensions interfered with localhost access.
+* Flask application was not started correctly
+* Browser cache interference
+* Browser extension interference
 
-### Fix
+### Resolution
 
-Run Flask from inside the correct project directory:
+Navigate to the project:
 
 ```bash
-
-cd ~/Documents/...../projects/weather-app
-
+cd projects/weather-app
 ```
 
-Activate virtual environment:
+Activate the virtual environment:
 
 ```bash
-
 source venv/bin/activate
-
 ```
 
-Run Flask application:
+Start Flask:
 
 ```bash
-
 python3 app.py
-
 ```
 
-Verify terminal shows:
+If necessary:
+
+* Open an Incognito window
+* Hard refresh the page
 
 ```text
-
-Running on http://127.0.0.1:5000
-
-```
-
-Then open:
-
-```text
-
-http://127.0.0.1:5000
-
-```
-
-If browser still shows 403:
-
-* open in Incognito mode
-* or hard refresh with:
-
-```text
-
 CMD + SHIFT + R
+```
 
+### Verification
+
+Terminal displays:
+
+```text
+Running on http://127.0.0.1:5000
+```
+
+Browser loads:
+
+```text
+http://127.0.0.1:5000
 ```
 
 ---
 
-## app.py showed command not found
+## app.py Showed Command Not Found
 
 ### Problem
 
 ```text
-
 zsh: command not found: app.py
-
 ```
 
 ### Cause
 
-`app.py` was executed directly instead of through Python.
+The script was executed directly instead of through Python.
 
-### Fix
+### Resolution
 
-Wrong:
+Incorrect:
 
 ```bash
-
 app.py
-
 ```
 
 Correct:
 
 ```bash
-
 python3 app.py
-
 ```
+
+### Verification
+
+The Flask application starts successfully.
 
 ---
 
-## Flask dependencies missing
+## Flask Dependencies Missing
 
 ### Problem
 
 ```text
-
 ModuleNotFoundError: No module named 'requests'
-
 ```
 
 ### Cause
 
-Dependencies were not installed inside the current virtual environment.
+Dependencies were not installed in the active virtual environment.
 
-### Fix
+### Resolution
 
-Install dependencies from `requirements.txt`:
+Install project dependencies:
 
 ```bash
-
 pip install -r requirements.txt
-
 ```
 
----
+### Verification
+
+Application starts without import errors.
 
 ---
 
@@ -229,19 +220,15 @@ After running:
 git merge improve-ui
 ```
 
-Git opened a text editor and the terminal appeared frozen.
-
-No new commands could be entered.
+Git opened Vim and the terminal appeared frozen.
 
 ### Cause
 
-Git opened the Vim editor to confirm the merge commit message.
+Git was waiting for confirmation of the merge commit message.
 
-The merge was waiting for the commit message to be accepted.
+### Resolution
 
-### Fix
-
-Save and exit Vim:
+Exit Vim and complete the merge:
 
 1. Press:
 
@@ -261,8 +248,6 @@ Esc
 Enter
 ```
 
-Git will complete the merge operation.
-
 ### Verification
 
 Run:
@@ -271,16 +256,17 @@ Run:
 git status
 ```
 
-Expected result:
+Expected output:
 
 ```text
 On branch main
 nothing to commit, working tree clean
 ```
 
-Then push the merge:
+Then push:
 
 ```bash
 git push origin main
 ```
+
 ---
