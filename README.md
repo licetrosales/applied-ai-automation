@@ -66,6 +66,8 @@ The primary goal is to strengthen practical engineering skills through hands-on 
 applied-ai-automation/
 ├── README.md
 │
+│── figures/
+│
 ├── projects/
 │   │
 │   ├── weather-app/
@@ -79,9 +81,10 @@ applied-ai-automation/
 ├── docs/
 │   │
 │   ├── setup-guides/
+│   ├── workflow-notes/
 │   ├── troubleshooting/
 │   └── learning-notes/
-│
+│   
 ├── prompts/
 │
 └── playground/
