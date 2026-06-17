@@ -6,8 +6,8 @@ Modern automation can be implemented using either deterministic workflows or AI 
 
 The key difference is how decisions are made during execution.
 
-* Traditional automation follows predefined steps.
-* Agentic automation focuses on goals and allows an AI model to decide which actions to perform.
+- Traditional automation follows predefined steps.
+- Agentic automation focuses on goals and allows an AI model to decide which actions to perform.
 
 ## Definitions
 
@@ -36,50 +36,50 @@ Agentic automation uses an AI model to interpret a goal and decide which tools, 
 
 ### Traditional Automation
 
-* Predictable execution
-* Easier troubleshooting
-* Lower cost
-* Reliable for repetitive processes
+- Predictable execution
+- Easier troubleshooting
+- Lower cost
+- Reliable for repetitive processes
 
 ### Agentic Automation
 
-* Flexible decision making
-* Handles ambiguous requests
-* Adapts to changing requirements
-* Can orchestrate multiple tools dynamically
+- Flexible decision making
+- Handles ambiguous requests
+- Adapts to changing requirements
+- Can orchestrate multiple tools dynamically
 
 ## Disadvantages
 
 ### Traditional Automation
 
-* Limited flexibility
-* Requires manual workflow design
-* Difficult to handle unexpected scenarios
+- Limited flexibility
+- Requires manual workflow design
+- Difficult to handle unexpected scenarios
 
 ### Agentic Automation
 
-* Less predictable
-* More expensive due to LLM usage
-* Requires careful prompt engineering
-* Internal reasoning may not always be fully visible
+- Less predictable
+- More expensive due to LLM usage
+- Requires careful prompt engineering
+- Internal reasoning may not always be fully visible
 
 ## Use Cases
 
 ### Traditional Automation
 
-* Scheduled reports
-* Data synchronization
-* ETL pipelines
-* Backup processes
-* Notification workflows
+- Scheduled reports
+- Data synchronization
+- ETL pipelines
+- Backup processes
+- Notification workflows
 
 ### Agentic Automation
 
-* Research assistants
-* Customer support agents
-* Security investigation assistants
-* Multi-tool business workflows
-* AI-powered automation systems
+- Research assistants
+- Customer support agents
+- Security investigation assistants
+- Multi-tool business workflows
+- AI-powered automation systems
 
 ## Examples
 
@@ -114,11 +114,11 @@ Traditional workflows are generally easier to debug because every step is explic
 
 Agentic workflows provide visibility into:
 
-* User prompts
-* Tool calls
-* Tool inputs
-* Tool outputs
-* Execution sequence
+- User prompts
+- Tool calls
+- Tool inputs
+- Tool outputs
+- Execution sequence
 
 However, the model's complete internal reasoning process may not always be observable.
 
