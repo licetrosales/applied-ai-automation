@@ -10,6 +10,8 @@ The workflow prevents duplicate processing by tracking Gmail Message IDs.
 
 ## Workflow Architecture
 ![alt text](../figures/gmail-invoice-processing-workflow.png)
+
+
 **Figure 1:** Workflow that retrieves invoice PDFs from Gmail, extracts invoice data using DeepSeek, and stores the results in Google Sheets.
 
 ## Workflow Components
@@ -52,6 +54,12 @@ Parses the model response and enriches the output with the Gmail Message ID.
 ### Google Sheets Append Row
 
 Stores the extracted invoice data in a structured format.
+
+### Gmail Notification
+
+Sends a confirmation email after the invoice has been successfully stored in Google Sheets.
+
+The email contains key invoice details and serves as an audit and monitoring mechanism for workflow execution.
 
 ## Key Configuration Details
 
@@ -125,6 +133,25 @@ return [
 ];
 ```
 
+### Gmail Confirmation Email
+
+After successful processing, a Gmail node sends a notification email containing the extracted invoice information.
+
+#### Subject
+
+Invoice Processed Successfully
+
+#### Email Content
+
+The notification includes:
+
+- Supplier name
+- Order date
+- Order number
+- Total amount
+- Currency
+- Gmail Message ID
+
 ### Google Sheets Schema
 
 | Column         | Purpose                                       |
@@ -149,6 +176,7 @@ return [
 8. Invoice fields are returned as JSON.
 9. JavaScript validates and formats the data.
 10. The extracted fields and Message ID are stored in Google Sheets.
+11. A confirmation email is sent with the processed invoice details.
 
 ## Key Concepts Learned
 
@@ -169,6 +197,7 @@ The workflow successfully:
 - Extracts structured business data from unstructured documents
 - Prevents duplicate processing
 - Stores invoice information in a searchable spreadsheet
+- Sends automated processing notifications
 - Reduces manual data entry effort
 
 ## Next Steps
