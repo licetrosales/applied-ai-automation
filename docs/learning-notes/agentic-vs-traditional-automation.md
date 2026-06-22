@@ -145,11 +145,11 @@ Agentic security systems extend this approach by allowing AI models to investiga
 
 Examples include:
 
-Alert triage and prioritization
-Threat intelligence enrichment
-Incident investigation assistance
-Security operations center (SOC) automation
-AI-assisted incident response
+- Alert triage and prioritization
+- Threat intelligence enrichment
+- Incident investigation assistance
+- Security operations center (SOC) automation
+- AI-assisted incident response
 
 Understanding both automation models provides a foundation for future work in security automation, SOC operations, threat detection, and AI-powered cybersecurity systems.
 
