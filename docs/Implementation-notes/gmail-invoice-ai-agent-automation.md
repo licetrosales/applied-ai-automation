@@ -236,7 +236,19 @@ The workflow successfully:
 
 This validated the transition from a traditional LLM-based workflow to an Agent-based workflow capable of coordinating multiple business actions autonomously.
 
+### Agent Execution Visibility
 
+During testing, the Agent execution logs were inspected to verify tool orchestration.
+
+The logs showed the Agent:
+
+1. Extracting invoice information.
+2. Calling the Google Sheets tool with structured invoice data.
+3. Receiving confirmation that the row was appended.
+4. Calling the Gmail tool to send a notification.
+5. Completing the workflow successfully.
+
+Depending on the n8n version, tool calls may appear either as explicit "Tool" entries or as "AI: Calling <Tool Name>" messages in the execution log. Both representations indicate successful Agent tool usage.
 ## Key Concepts Learned
 - Agentic workflow design
 - Tool-based automation in n8n
