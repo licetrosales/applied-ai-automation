@@ -170,6 +170,73 @@ The email includes:
 10. The AI Agent uses the Gmail tool to send a confirmation email.
 11. The workflow completes.
 
+## Validation and Testing
+
+The workflow was tested end-to-end using a sample invoice email containing a PDF attachment.
+
+The expected Agent execution flow was:
+
+```text
+AI Agent
+    ↓
+Google Sheets Tool
+    ↓
+AI Agent
+    ↓
+Gmail Tool
+    ↓
+AI Agent
+```
+
+### Validation Objectives
+
+The following behaviors were verified:
+
+* The AI Agent successfully extracted invoice information from the PDF text.
+* The Google Sheets tool appended a new invoice record.
+* The Gmail tool sent a confirmation email.
+* The Agent completed all required tasks without manual intervention.
+* Duplicate prevention logic remained functional.
+
+### Agent Execution Analysis
+
+Execution logs were reviewed to validate:
+
+* Tool invocation sequence
+* Inputs and outputs exchanged between the Agent and tools
+* Token consumption
+* Processing duration
+* Final workflow status
+
+The logs showed that the Agent correctly coordinated multiple tool calls during a single execution.
+
+### Observations
+
+The Agent demonstrated flexibility when mapping extracted invoice information to Google Sheets columns.
+
+Minor variations in field naming did not prevent successful data insertion, indicating that tool descriptions and prompt instructions provided sufficient context for the Agent.
+
+### Improvement Opportunities
+
+Potential future enhancements include:
+
+* Standardizing date formats before storage.
+* Increasing consistency of generated email content.
+* Adding validation rules for missing invoice fields.
+* Implementing more robust error handling and recovery procedures.
+
+### Test Result
+
+The workflow successfully:
+
+* Processed a PDF invoice.
+* Stored structured invoice data in Google Sheets.
+* Sent a confirmation email.
+* Completed all actions through AI Agent tool orchestration.
+
+This validated the transition from a traditional LLM-based workflow to an Agent-based workflow capable of coordinating multiple business actions autonomously.
+
+
 ## Key Concepts Learned
 - Agentic workflow design
 - Tool-based automation in n8n
