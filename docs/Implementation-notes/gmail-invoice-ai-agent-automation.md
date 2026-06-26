@@ -369,19 +369,17 @@ This architecture can later be extended to:
 * Incident management systems
 * Error logging databases
 
----
-
 ## Error Handling Validation Results
 
 The following behaviors were successfully verified:
 
-- The main workflow correctly failed when an invalid file path was encountered.
-- The Error Workflow was automatically triggered.
-- The Error Trigger node received the failure event.
-- Gmail notifications were successfully sent.
-- Workflow failures became immediately visible without manual log inspection.
+- The main workflow failed when an invalid file path was encountered.
+- The configured Error Workflow was triggered automatically.
+- The Error Trigger received the execution metadata.
+- The Gmail node sent an error notification.
+- Workflow failures became immediately visible without requiring manual inspection.
 
-The implementation demonstrates how n8n can separate business logic from operational monitoring by using dedicated Error Workflows.
+These results demonstrate how n8n separates business logic from operational monitoring through dedicated Error Workflows.
 
 ## Key Concepts Learned
 - Agentic workflow design
