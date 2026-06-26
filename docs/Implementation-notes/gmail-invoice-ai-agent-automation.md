@@ -8,6 +8,8 @@ It extends the previous linear automation by replacing the Basic LLM Chain, Java
 
 The workflow extracts invoice data, stores it in Google Sheets, sends a confirmation email, and prevents duplicate processing using Gmail Message IDs.
 
+To improve operational reliability, the solution also includes a dedicated Error Workflow that automatically notifies administrators whenever a production execution fails.
+
 ## Workflow Architecture
 
 ![alt text](../figures/ai-agent-gmail-invoice-processing-workflow.png)
@@ -352,11 +354,7 @@ For validation purposes, the workflow was tested using actual Gmail-triggered ex
 
 ### Stop and Error Nodes
 
-Dedicated **Stop and Error** nodes were added to important failure paths:
-
-* PDF storage failures
-* PDF text extraction failures
-* AI processing failures
+Dedicated Stop and Error nodes were added at critical stages of the workflow, including PDF storage, PDF text extraction, and AI processing, to generate explicit workflow failures when unrecoverable errors occur.
 
 These nodes generate explicit workflow failures and improve visibility of operational problems.
 
