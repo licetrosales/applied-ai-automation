@@ -403,18 +403,24 @@ These results demonstrate how n8n separates business logic from operational moni
 
 The workflow successfully:
 
-- Processes invoice PDF attachments from Gmail
-- Prevents duplicate invoice processing
-- Extracts structured invoice data using an AI Agent
-- Stores invoice records in Google Sheets
-- Sends automated confirmation emails
-- Demonstrates tool-based AI automation
-- Shows the transition from linear automation to agentic automation
+- Processes invoice PDF attachments received through Gmail.
+- Prevents duplicate invoice processing using Gmail Message IDs.
+- Extracts structured invoice information using an AI Agent.
+- Stores invoice records in Google Sheets.
+- Sends automated confirmation emails after successful processing.
+- Detects workflow failures through dedicated Stop and Error nodes.
+- Automatically triggers a centralized Error Workflow.
+- Sends email notifications whenever production failures occur.
+- Demonstrates the transition from a linear workflow to an agent-based automation with centralized error handling.
 
 ## Next Steps
-- Add Agent memory for more advanced context handling
-- Add status tracking for processed, skipped, and failed invoices
-- Support multiple invoice formats and languages
-- Add validation rules for extracted fields
-- Send alerts when required invoice fields are missing
-- Compare reliability between the traditional workflow and the AI Agent workflow
+
+Potential future enhancements include:
+
+- Add Agent memory for multi-step reasoning.
+- Support multiple invoice formats and languages.
+- Validate mandatory invoice fields before storage.
+- Retry temporary failures automatically.
+- Log workflow metrics and errors to a monitoring database.
+- Integrate Slack or Microsoft Teams for operational alerts.
+- Compare performance between the traditional LLM workflow and the AI Agent workflow.
