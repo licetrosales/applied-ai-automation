@@ -220,10 +220,12 @@ Minor variations in field naming did not prevent successful data insertion, indi
 
 Potential future enhancements include:
 
-* Standardizing date formats before storage.
-* Increasing consistency of generated email content.
-* Adding validation rules for missing invoice fields.
-* Implementing more robust error handling and recovery procedures.
+- Standardizing invoice date formats before storage.
+- Validating extracted invoice fields before writing to Google Sheets.
+- Adding automatic retry mechanisms for transient failures.
+- Logging workflow errors to a database or monitoring dashboard.
+- Sending richer notification emails containing execution metadata.
+- Supporting multiple invoice layouts and languages.
 
 ### Test Result
 
