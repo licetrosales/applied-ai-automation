@@ -2,47 +2,59 @@
 
 A portfolio of practical AI engineering, workflow automation, and AI-assisted software development projects.
 
-This repository demonstrates the design, implementation, and documentation of real-world automation solutions built with modern AI technologies, no-code/low-code platforms, Python, and cloud integrations.
-
-The goal is to showcase engineering practices rather than isolated code samples. Each project is accompanied by architecture diagrams, implementation notes, setup documentation, and lessons learned.
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
+![Make.com](https://img.shields.io/badge/Make.com-Automation-purple)
+![n8n](https://img.shields.io/badge/n8n-Workflow-orange)
+![DeepSeek](https://img.shields.io/badge/DeepSeek-LLM-green)
+![Cursor AI](https://img.shields.io/badge/Cursor-AI-black)
+![AI Engineering](https://img.shields.io/badge/AI-Engineering-red)
+![Automation](https://img.shields.io/badge/Automation-Workflows-blueviolet)
 
 ---
 
-# Technical Focus
+## Overview
 
-This repository focuses on practical applications of:
+This repository showcases the design, implementation, and documentation of AI-powered applications and workflow automation solutions.
 
-- AI-assisted software development
-- Workflow automation
-- AI agents
+It combines software development, AI engineering, and automation into a collection of practical projects that emphasize reproducible implementations, technical documentation, and engineering best practices.
+
+Each project is accompanied by architecture diagrams, setup guides, workflow documentation, and lessons learned, making the repository both a technical portfolio and a reusable engineering knowledge base.
+
+---
+
+# Technical Skills Demonstrated
+
+- AI-assisted Software Development
+- Workflow Automation
+- AI Agents
+- Prompt Engineering
 - Large Language Models (LLMs)
-- Python application development
-- REST API integrations
+- Python Development
+- REST API Integration
 - Retrieval-Augmented Generation (RAG)
-- Prompt engineering
-- Google Workspace automation
-- Business process automation
-
-Future work will expand into AI-powered cybersecurity automation and intelligent security workflows.
+- Google Workspace Automation
+- Business Process Automation
+- Technical Documentation
+- System Design
 
 ---
 
 # Technologies
 
-### AI & LLMs
+## AI & LLMs
 
+- Cursor AI
 - DeepSeek
 - Ollama
 - LM Studio
-- Cursor AI
 - Local LLMs
 
-### Automation Platforms
+## Automation
 
 - Make.com
 - n8n
 
-### Software Development
+## Development
 
 - Python
 - FastAPI
@@ -51,18 +63,18 @@ Future work will expand into AI-powered cybersecurity automation and intelligent
 - GitHub
 - VS Code
 
-### Cloud & Productivity
+## Cloud & Productivity
 
-- Google Workspace
 - Gmail API
+- Google Workspace
 - Google Sheets
 - Webhooks
 
 ---
 
-# Repository Organization
+# Repository Structure
 
-```
+```text
 applied-ai-automation/
 
 docs/
@@ -108,84 +120,96 @@ prompts/
 
 ---
 
-# Repository Components
+# Featured Projects
 
-## Projects
-
-The **projects** directory contains complete implementations demonstrating end-to-end solutions. Each project includes source code, configuration, and supporting documentation.
-
-Current projects include:
-
-- AI Email Assistant
-- Cyber Alert Agent
-- Weather Dashboard
-- Weekly Meal Planner *(in development)*
+| Project | Focus | Status |
+|----------|-------|--------|
+| Weather Dashboard | AI-assisted software development with Cursor | ✅ Completed |
+| AI Email Assistant | AI-powered email processing and automation | 🚧 In Progress |
+| Weekly Meal Planner | AI workflow automation with Make.com | 🚧 Planned |
+| Cyber Alert Agent | AI-assisted cybersecurity automation | 🚧 Planned |
 
 ---
 
+# Documentation
+
+The repository is organized into several documentation categories.
+
 ## Workflow Case Studies
 
-The **workflow-case-studies** directory documents complete automation implementations developed using Make.com and n8n.
+Complete implementations developed using **Make.com** and **n8n**.
 
-Each case study includes:
+Each case study documents:
 
 - Business problem
 - Solution architecture
-- Workflow design
+- Workflow implementation
 - AI integration
-- Error handling
-- Validation strategy
+- Error handling strategy
+- Validation approach
 - Lessons learned
 
 ---
 
 ## AI-Assisted Software Development
 
-Case studies documenting software developed using AI-assisted engineering workflows.
+Documents the development of complete software projects built with AI-assisted engineering workflows.
 
-These documents focus on:
+Topics include:
 
 - AI-driven implementation
-- Prompting strategies
+- Prompt engineering strategies
+- Human validation
 - Development workflow
-- Human review process
-- Technical observations
+- Engineering observations
 
 ---
 
-## Technical Documentation
+## Learning Notes
 
-Supporting documentation includes:
+Technical notes collected while studying AI engineering, automation, APIs, LLMs, Python, and software architecture.
 
-- Environment setup
-- Integration guides
-- Learning notes
-- Operational runbooks
-- Troubleshooting guides
+---
+
+## Setup Guides
+
+Installation and configuration guides for development tools, local environments, APIs, and automation platforms.
+
+---
+
+## Runbooks
+
+Operational procedures and reusable implementation references.
+
+---
+
+## Troubleshooting
+
+Common implementation issues and their resolutions.
 
 ---
 
 # Engineering Principles
 
-The projects in this repository follow several engineering practices:
+Projects in this repository follow a consistent engineering approach:
 
 - Documentation-first development
 - Modular workflow design
-- Reproducible implementations
-- Incremental experimentation
-- AI-assisted development with human validation
-- Clear separation between prototypes and production-ready solutions
+- Incremental implementation
+- Reproducible solutions
+- Human validation of AI-generated code
+- Clear separation between experimentation and production-ready implementations
 
 ---
 
 # Current Areas of Exploration
 
+- AI-assisted software engineering
 - Workflow automation with Make.com
 - Workflow automation with n8n
-- AI agents
+- AI Agents
+- Prompt Engineering
 - Local LLMs
-- AI-assisted software engineering
-- Prompt engineering
 - Google Workspace automation
 - Python backend development
 
@@ -193,18 +217,27 @@ The projects in this repository follow several engineering practices:
 
 # Roadmap
 
-Planned additions include:
+Upcoming projects include:
 
-- AI-powered meal planning assistant
+- AI-powered Weekly Meal Planner
 - Cybersecurity automation workflows
 - MCP-based AI applications
 - RAG-powered assistants
 - Security monitoring agents
-- Advanced Make.com automation scenarios
-- End-to-end AI agent architectures
+- Multi-agent automation architectures
+- End-to-end AI engineering case studies
 
 ---
 
 # Purpose
 
-This repository serves as a technical portfolio demonstrating practical experience in AI engineering, automation, and modern software development through documented, reproducible projects.
+This repository serves as a technical portfolio demonstrating practical experience in:
+
+- AI Engineering
+- Workflow Automation
+- AI-assisted Software Development
+- Python Development
+- Technical Documentation
+- System Design
+
+The objective is to build production-oriented solutions while documenting the engineering decisions, implementation process, and lessons learned behind each project.
