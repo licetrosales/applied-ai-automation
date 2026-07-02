@@ -20,6 +20,8 @@ It combines software development, AI engineering, and automation into a collecti
 
 Each project is accompanied by architecture diagrams, setup guides, workflow documentation, and lessons learned, making the repository both a technical portfolio and a reusable engineering knowledge base.
 
+This repository is continuously updated as I explore new AI engineering, automation, and software development technologies through hands-on projects.
+
 ---
 
 # Technical Skills Demonstrated
