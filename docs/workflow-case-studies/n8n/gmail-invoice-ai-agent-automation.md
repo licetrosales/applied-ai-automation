@@ -12,7 +12,7 @@ To improve operational reliability, the solution also includes a dedicated Error
 
 ## Workflow Architecture
 
-![alt text](../figures/ai-agent-gmail-invoice-processing-workflow.png)
+![alt text](../../figures/ai-agent-gmail-invoice-processing-workflow.png)
 
 **Figure 1:** AI Agent workflow that processes Gmail invoice attachments, extracts structured invoice data, stores it in Google Sheets, and sends a confirmation email.
 
@@ -264,7 +264,7 @@ Instead of relying solely on execution logs, n8n automatically triggers a dedica
 
 This allows operational issues to be detected quickly and investigated before invoices are missed.
 
-![alt text](../figures/ai-agent-gmail-invoice-processing-error-handling-workflow.png)
+![alt text](../../figures/ai-agent-gmail-invoice-processing-error-handling-workflow.png)
 
 **Figure 2:** Error Handling Architecture
 
@@ -281,8 +281,8 @@ Gmail Send Message
 ```
 
 
-![alt text](../figures/invoice-processing-error-handling.png)
-
+![alt text](../../figures/invoice-processing-error-handling.png)
+![alt text] 
 **Figure 3:** Invoice Processing Error Handler which is linked to the main workflow
 
 ### Error Trigger

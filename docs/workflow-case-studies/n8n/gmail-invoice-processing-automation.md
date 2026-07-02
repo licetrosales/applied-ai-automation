@@ -9,7 +9,7 @@ It combines PDF text extraction, AI-powered information extraction, duplicate de
 The workflow prevents duplicate processing by tracking Gmail Message IDs.
 
 ## Workflow Architecture
-![alt text](../figures/gmail-invoice-processing-workflow.png)
+![alt text](../../figures/gmail-invoice-processing-workflow.png)
 
 
 **Figure 1:** Workflow that retrieves invoice PDFs from Gmail, extracts invoice data using DeepSeek, and stores the results in Google Sheets.
