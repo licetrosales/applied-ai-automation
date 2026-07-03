@@ -32,6 +32,15 @@ JSON Response
 
 ---
 
+## Configuration
+
+- **Platform:** Make.com
+- **Module:** DeepSeek AI – Create a Chat Completion
+- **Model:** deepseek-v4-flash
+- **Prompting:** System and User messages
+- **Output:** Structured JSON for downstream workflow processing
+
+---
 ## Prompt Design
 
 The model was instructed to:
