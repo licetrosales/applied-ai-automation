@@ -31,6 +31,18 @@ The project demonstrates how workflow automation, large language models (LLMs), 
 
 ---
 
+## Technology Stack
+
+- **Workflow Automation:** Make.com
+- **AI:** DeepSeek API (LLM)
+- **Email:** Gmail
+- **Data Storage:** Google Sheets
+- **Documentation:** Markdown
+- **Version Control:** Git & GitHub
+- **Future Platform:** n8n, Docker, Raspberry Pi 5
+
+---
+
 ## Repository Structure
 
 The repository follows an engineering-oriented project structure.
