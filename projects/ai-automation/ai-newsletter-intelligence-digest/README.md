@@ -2,7 +2,7 @@
 
 An AI-powered automation system that transforms technical newsletters into structured, searchable intelligence.
 
-The project demonstrates how modern workflow automation, large language models, and structured information extraction can be combined to reduce information overload and improve the discovery of professionally relevant technical content.
+The project demonstrates how workflow automation, large language models (LLMs), and structured information extraction can be combined to reduce information overload and improve the discovery of professionally relevant technical content.
 
 ---
 
@@ -10,44 +10,67 @@ The project demonstrates how modern workflow automation, large language models, 
 
 - Automate the collection of technical newsletters.
 - Extract structured information using AI.
-- Classify topics into predefined technical domains.
-- Generate concise personalized digests.
-- Build a searchable knowledge base of technical insights.
+- Classify articles into predefined technical domains.
+- Generate concise, personalized intelligence digests.
+- Build a searchable knowledge base of relevant technical insights.
 
 ---
 
 ## Engineering Highlights
 
-- AI-assisted information extraction
-- Workflow automation
+- Workflow automation with Make.com
+- Large Language Model (LLM) integration
 - Prompt engineering
+- Structured information extraction
 - API integration
-- Modular architecture
-- Structured data processing
-- Agile project organization
+- Modular workflow design
+- Agile project management
 - Architecture Decision Records (ADRs)
-- Automated testing
-- Technical documentation
+- Test planning and validation
+- Technical documentation and version control
 
 ---
 
-## Documentation
+## Repository Structure
 
-Complete project documentation is available in the `docs/` directory.
+The repository follows an engineering-oriented project structure.
+
+| Directory | Purpose |
+|-----------|---------|
+| `docs/` | Architecture, requirements, ADRs, roadmap, glossary, workflow documentation |
+| `make/` | Make.com blueprints and workflow screenshots |
+| `prompts/` | LLM prompts used for classification and summarization |
+| `sprints/` | Sprint planning, reviews, and retrospectives |
+| `testing/` | Test plan and validation scenarios |
+
+---
+
+## Development Process
+
+The project is developed iteratively following Agile principles.
+
+Each sprint delivers a working increment and includes:
+
+- Sprint planning
+- Implementation
+- Testing
+- Sprint review
+- Retrospective
+- Version-controlled documentation
 
 ---
 
 ## Project Status
 
-🚧 Sprint 0 — Project Initiation
+**Current Sprint:** Sprint 1 – Email Ingestion
 
-Current focus:
+Current objectives:
 
-- Project vision
-- Requirements
-- Architecture
-- Technology decisions
-- Product backlog
+- Configure Gmail trigger
+- Filter supported newsletters
+- Extract newsletter content
+- Integrate DeepSeek classification
+- Store structured results in Google Sheets
 
 ---
 
@@ -65,12 +88,28 @@ Current focus:
 
 ---
 
-## Future Roadmap
+## Future Enhancements
 
 - n8n implementation
 - Local LLM support
 - Vector search
 - Threat intelligence feeds
-- RAG integration
+- Retrieval-Augmented Generation (RAG)
 - Interactive dashboard
 - Multi-source aggregation
+
+---
+
+## Project Documentation
+
+Project documentation is organized within the `docs/` directory and includes:
+
+- Vision
+- Requirements
+- Architecture
+- Product Backlog
+- Architecture Decision Records (ADRs)
+- Roadmap
+- Sprint documentation
+- Workflow design
+- Testing strategy
