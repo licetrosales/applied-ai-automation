@@ -9,7 +9,7 @@ classify it with DeepSeek, and store the result in Google Sheets.
 
 ## Sprint Backlog
 
-- [ ] Configure Gmail trigger
+- [x] Configure Gmail trigger
 - [ ] Filter Heise newsletters
 - [ ] Extract email body
 - [ ] Create first DeepSeek prompt
@@ -35,3 +35,11 @@ classify it with DeepSeek, and store the result in Google Sheets.
 ## Sprint Retrospective
 
 (To be completed at the end of the sprint)
+
+---
+
+### Progress Notes
+
+- Gmail connection established.
+- Test newsletter successfully forwarded from web.de to Gmail.
+- Gmail trigger configured and successfully retrieved one forwarded newsletter.
