@@ -37,6 +37,7 @@ This repository is continuously updated as I explore new AI engineering, automat
 - Google Workspace Automation
 - Business Process Automation
 - Technical Documentation
+- Agile Methodology
 - System Design
 
 ---
