@@ -1,7 +1,7 @@
 # Overview
 
 Sprint 0  Project Initiation        ✅
-Sprint 1  Email Ingestion
+Sprint 1  Email Ingestion           ✅
 Sprint 2  AI Classification
 Sprint 3  Data Storage
 Sprint 4  Digest Generation
