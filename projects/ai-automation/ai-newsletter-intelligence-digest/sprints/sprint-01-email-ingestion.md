@@ -2,27 +2,28 @@
 
 ## Sprint Goal
 
-Process one forwarded newsletter from Gmail through Make.com,
-classify it with DeepSeek, and store the result in Google Sheets.
+Receive one forwarded newsletter from Gmail using Make.com and verify
+that the workflow successfully retrieves the email for further processing.
 
 ---
 
 ## Sprint Backlog
 
 - [x] Configure Gmail trigger
-- [ ] Filter Heise newsletters
+- [x] Connect Gmail account
+- [x] Forward test newsletter
+- [x] Retrieve one newsletter in Make
+- [ ] Filter supported senders
 - [ ] Extract email body
-- [ ] Create first DeepSeek prompt
-- [ ] Validate JSON output
-- [ ] Store results in Google Sheets
 
 ---
 
 ## Deliverables
 
-- Working Make.com scenario
-- Initial prompt
-- Google Sheet with processed newsletter
+- Working Gmail trigger
+- Successful newsletter retrieval
+- Make.com scenario
+- Execution screenshots
 
 ---
 
@@ -42,4 +43,5 @@ classify it with DeepSeek, and store the result in Google Sheets.
 
 - Gmail connection established.
 - Test newsletter successfully forwarded from web.de to Gmail.
-- Gmail trigger configured and successfully retrieved one forwarded newsletter.
+- Gmail trigger configured.
+- Successfully retrieved one forwarded newsletter in Make.com. 
