@@ -13,8 +13,6 @@ that the workflow successfully retrieves the email for further processing.
 - [x] Connect Gmail account
 - [x] Forward test newsletter
 - [x] Retrieve one newsletter in Make
-- [ ] Filter supported senders
-- [ ] Extract email body
 
 ---
 
