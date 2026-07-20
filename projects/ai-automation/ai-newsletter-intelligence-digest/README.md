@@ -88,15 +88,18 @@ Current objectives:
 
 ## Planned Roadmap
 
-| Sprint | Goal |
-|----------|------------------------------|
-| Sprint 0 | Project Initiation |
-| Sprint 1 | Email Ingestion |
-| Sprint 2 | AI Classification |
-| Sprint 3 | Data Storage |
-| Sprint 4 | Intelligence Digest |
-| Sprint 5 | Reliability & Monitoring |
-| Sprint 6 | Version 1.0 Release |
+| Sprint | Goal | Status |
+|---|---|---|
+| Sprint 0 | Project Initiation | ✅ Completed |
+| Sprint 1 | Email Ingestion | ✅ Completed |
+| Sprint 2 | Email Processing | 🚧 Next |
+| Sprint 3 | AI Classification | Planned |
+| Sprint 4 | Data Storage | Planned |
+| Sprint 5 | Digest Generation | Planned |
+| Sprint 6 | Monitoring & Testing | Planned |
+| Sprint 7 | Version 1.0 | Planned |
+| Sprint 8 | n8n Migration | Future |
+| Sprint 9 | Local LLM Support | Future |
 
 ---
 
