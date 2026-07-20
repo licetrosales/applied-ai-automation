@@ -1,4 +1,4 @@
-#ADR-002 AI Classification Categories
+# ADR-002 AI Classification Categories
 
 ## Status
 
