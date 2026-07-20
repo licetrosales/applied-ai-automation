@@ -2,24 +2,42 @@
 
 ## Objective
 
-Process one newsletter from Gmail.
+Process forwarded technical newsletters from Gmail, extract relevant content, classify it using AI, and store structured results for digest generation.
 
-## Trigger
+## Planned Workflow
 
-New Gmail Email
+Gmail
+↓
+Watch incoming emails
+↓
+Filter supported newsletter senders
+↓
+Extract email metadata and body
+↓
+DeepSeek AI classification
+↓
+Structured JSON output
+↓
+Google Sheets storage
+↓
+Personalized digest
 
-## Filter
+## Current Implementation Status
 
-Sender = heise
+### Completed
 
-## Action
+- Gmail connection established
+- Gmail Watch Emails trigger configured
+- Forwarded newsletter successfully retrieved
 
-Extract body
+### Next
 
-## AI
+- Filter supported senders
+- Extract email body and metadata
 
-Classify article
+### Planned
 
-## Output
-
-Google Sheets
+- AI classification with DeepSeek
+- Structured output validation
+- Google Sheets storage
+- Digest generation
