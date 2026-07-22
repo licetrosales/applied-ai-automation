@@ -28,3 +28,16 @@ Test cases will be added incrementally as each sprint implements new functionali
 - [x] Gmail connection established successfully
 - [x] Forwarded newsletter detected by Gmail Watch Emails
 - [x] Make.com successfully retrieved one newsletter
+
+### Sprint 2 — Email Processing
+
+#### TC-002-01 — Accept Relevant Newsletter
+
+Related use case: UC-001  
+Sprint: Sprint 2  
+Precondition: Email is available to Gmail Watch Emails  
+Input: Forwarded Heise Security newsletter  
+Expected: Email passes filtering  
+Actual: Not tested yet  
+Status: NOT RUN  
+Evidence: Pending
