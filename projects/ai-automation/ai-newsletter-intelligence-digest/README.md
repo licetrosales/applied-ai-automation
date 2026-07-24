@@ -16,6 +16,26 @@ The project demonstrates how workflow automation, large language models (LLMs), 
 
 ---
 
+## High-Level Workflow
+
+WEB.DE
+  ↓
+Automated newsletter forwarding
+  ↓
+Gmail
+  ↓
+Make.com
+  ↓
+Email filtering and content extraction
+  ↓
+AI classification
+  ↓
+Structured data storage
+  ↓
+Personalized intelligence digest
+
+---
+
 ## Engineering Highlights
 
 - Workflow automation with Make.com
