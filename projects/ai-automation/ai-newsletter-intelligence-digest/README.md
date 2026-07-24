@@ -18,6 +18,7 @@ The project demonstrates how workflow automation, large language models (LLMs), 
 
 ## High-Level Workflow
 
+```text
 WEB.DE
   ↓
 Automated newsletter forwarding
@@ -33,6 +34,7 @@ AI classification
 Structured data storage
   ↓
 Personalized intelligence digest
+```
 
 ---
 
