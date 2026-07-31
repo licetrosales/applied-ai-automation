@@ -117,6 +117,7 @@ projects/
 ├── cyber-alert-agent/
 ├── weather-app/
 └── weekly-meal-planner/
+└── ai-office-assistant/
 
 prompts/
 ```
