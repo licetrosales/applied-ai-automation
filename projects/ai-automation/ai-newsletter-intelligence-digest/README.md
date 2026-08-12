@@ -10,9 +10,31 @@ The project demonstrates how workflow automation, large language models (LLMs), 
 
 - Automate the collection of technical newsletters.
 - Extract structured information using AI.
-- Classify articles into predefined technical domains.
+- Classify articles into predefined technical domains of personal interest.
 - Generate concise, personalized intelligence digests.
 - Build a searchable knowledge base of relevant technical insights.
+
+---
+
+## High-Level Workflow
+
+```text
+WEB.DE
+  ↓
+Automated newsletter forwarding
+  ↓
+Gmail
+  ↓
+Make.com
+  ↓
+Email filtering and content extraction
+  ↓
+AI classification
+  ↓
+Structured data storage
+  ↓
+Personalized intelligence digest
+```
 
 ---
 
