@@ -29,7 +29,7 @@ Its purpose is to:
 
 **Category:** Engineering Practice / Version Control
 
-**Status:** WIP
+**Status:** WIP*
 
 **Priority:** Medium
 
@@ -154,3 +154,5 @@ Repository-level internal documentation.
 Location:
 
 `docs/continual-improvement/continual-improvement-register.md`
+
+*WIP: Work in Progress
