@@ -223,11 +223,11 @@ Projects in this repository follow a consistent engineering approach:
 
 Upcoming projects include:
 
+- Security monitoring agents
 - AI-powered Weekly Meal Planner
 - Cybersecurity automation workflows
 - MCP-based AI applications
 - RAG-powered assistants
-- Security monitoring agents
 - Multi-agent automation architectures
 - End-to-end AI engineering case studies
 
