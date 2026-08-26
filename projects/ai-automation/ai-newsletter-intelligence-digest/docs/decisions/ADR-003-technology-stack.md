@@ -37,6 +37,22 @@ The selected technologies provide:
 
 ---
 
+## Alternatives Considered
+
+**n8n (self-hosted)** — Rejected for V1: requires hosting/maintenance overhead 
+before the workflow logic itself was validated. Revisit in Sprint 8 once 
+core logic is proven.
+
+**OpenAI / Claude API** — Rejected for V1: DeepSeek offers comparable 
+classification quality at lower cost for high-volume prototyping; 
+revisit if classification accuracy proves insufficient.
+
+**Airtable / PostgreSQL (storage)** — Rejected for V1: Google Sheets 
+requires no setup and is sufficient for low-volume structured data 
+during prototyping.
+
+---
+
 # Future Considerations
 
 Potential future technologies include:
