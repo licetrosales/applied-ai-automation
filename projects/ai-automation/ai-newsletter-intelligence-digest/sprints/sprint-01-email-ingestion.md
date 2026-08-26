@@ -41,7 +41,16 @@ in Sprint 2.
 
 ## Sprint Retrospective
 
-(To be completed at the end of the sprint)
+What went well: Gmail/Make.com connection setup was straightforward; 
+no credential issues.
+
+What was harder than expected: understanding which output field 
+("Full text body" vs "HTML body") to use for downstream extraction — 
+not yet decided, carried into Sprint 2.
+
+Change for next sprint: check available output fields before writing 
+the sprint backlog, so tasks like "identify the appropriate email 
+body field" (already in Sprint 2) aren't a late discovery.
 
 ---
 
