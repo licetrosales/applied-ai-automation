@@ -24,6 +24,18 @@ This repository is continuously updated as I explore new AI engineering, automat
 
 ---
 
+# Featured Projects
+
+| Project | Focus | Status |
+|----------|-------|--------|
+| Weather Dashboard | AI-assisted software development with Cursor | ✅ Completed |
+| AI Email Assistant | AI-powered email processing and automation | 🚧 In Progress |
+| Weekly Meal Planner | AI workflow automation with Make.com | 🚧 Planned |
+| Cyber Alert Agent | AI-assisted cybersecurity automation | 🚧 Planned |
+
+
+---
+
 # Technical Skills Demonstrated
 
 - AI-assisted Software Development
@@ -121,17 +133,6 @@ projects/
 
 prompts/
 ```
-
----
-
-# Featured Projects
-
-| Project | Focus | Status |
-|----------|-------|--------|
-| Weather Dashboard | AI-assisted software development with Cursor | ✅ Completed |
-| AI Email Assistant | AI-powered email processing and automation | 🚧 In Progress |
-| Weekly Meal Planner | AI workflow automation with Make.com | 🚧 Planned |
-| Cyber Alert Agent | AI-assisted cybersecurity automation | 🚧 Planned |
 
 ---
 
