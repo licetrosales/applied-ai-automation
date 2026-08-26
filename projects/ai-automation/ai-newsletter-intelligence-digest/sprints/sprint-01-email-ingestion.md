@@ -27,7 +27,15 @@ that the workflow successfully retrieves the email for further processing.
 
 ## Sprint Review
 
-(To be completed at the end of the sprint)
+Goal met: yes. One forwarded newsletter was successfully retrieved via 
+the Gmail trigger in Make.com (see screenshots/01-gmail-watch-emails-config.png, 
+02-gmail-trigger-output.png).
+
+Deliverables completed: 4/4.
+
+Deviations from plan: trigger Limit was set to 1 rather than a higher 
+value, to conserve Make.com operation credits during testing — revisit 
+in Sprint 2.
 
 ---
 
