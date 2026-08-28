@@ -207,6 +207,9 @@ Scopes identify the area affected by the change.
 `docs`
 : General documentation when a more specific scope is not useful.
 
+`standards` 
+: Repository-wide conventions and standards (e.g. commit convention, coding standards).
+
 ---
 
 ### Sprint Scopes
@@ -507,3 +510,4 @@ CIR entries.
 |---|---|---|
 | 1.0 | 2026-07-20 | Initial Git commit convention established |
 | 1.1 | 2026-08-28 | Add standardized verb glossary for commit descriptions |
+| 1.2 | 2026-08-28 | Add missing `standards` scope to Engineering/Repository Scopes |
