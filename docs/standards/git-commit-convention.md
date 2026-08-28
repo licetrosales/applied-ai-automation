@@ -354,6 +354,73 @@ history without opening every changed file.
 
 ---
 
+## Verb Glossary
+
+The `type(scope):` prefix identifies the *category* of change.
+The verb that follows identifies *what was done*. Keep verbs
+consistent so similar changes always read the same way in history.
+
+### Creating something new
+
+`add`
+: New file, section, doc, module, or prompt.
+
+`create`
+: A new structure or artifact built from scratch (folder, register, template).
+
+`configure`
+: Setting up an existing tool or service for the first time.
+
+`implement`
+: A more substantial new capability, often multi-step.
+
+### Changing something existing
+
+`update`
+: General revision to existing content. Default choice when nothing more specific fits.
+
+`modify`
+: A targeted adjustment to existing configuration or logic.
+
+`revise`
+: Wording or structure of documentation specifically.
+
+`rename`
+: A file, field, or variable renamed.
+
+`extend`
+: Adding capability onto something that already exists.
+
+Avoid `change` — it is always vaguer than `update` or `modify`.
+Use one of those instead.
+
+### Removing something
+
+`remove`
+: Deliberate, permanent removal of a file, step, config, or content.
+
+Use `remove` consistently rather than alternating with `delete`,
+to keep history predictable.
+
+### Fixing
+
+Name the correction itself: `correct`, `resolve`, `handle`.
+
+Example: `fix(ai): handle invalid classification response`
+
+### Documentation-specific
+
+`document`
+: Adding coverage for something that already exists but wasn't written up.
+
+`clarify`
+: Improving unclear existing text. Note: clarifying wording is a
+documentation change, not a fix — use `docs`, not `fix`, even when
+the change resolves confusion.
+
+
+---
+
 ## Decision Guide
 
 Ask:
@@ -439,3 +506,4 @@ CIR entries.
 | Version | Date | Description |
 |---|---|---|
 | 1.0 | 2026-07-20 | Initial Git commit convention established |
+| 1.1 | 2026-08-28 | Add standardized verb glossary for commit descriptions |
