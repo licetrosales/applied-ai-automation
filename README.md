@@ -204,6 +204,7 @@ Projects in this repository follow a consistent engineering approach:
 - Reproducible solutions
 - Human validation of AI-generated code
 - Clear separation between experimentation and production-ready implementations
+- Use core principles of security It design 
 
 ---
 
