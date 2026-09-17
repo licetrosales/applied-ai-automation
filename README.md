@@ -32,7 +32,7 @@ This repository is continuously updated as I explore new AI engineering, automat
 | AI Email Assistant | AI-powered email processing and automation | 🚧 In Progress |
 | Weekly Meal Planner | AI workflow automation with Make.com | 🚧 Planned |
 | Cyber Alert Agent | AI-assisted cybersecurity automation | 🚧 Planned |
-
+| Secure Field Data Pipeline | Offline-first field data capture with security-by-design (threat modeling, zero public attack surface) | 🚧 In Progress |
 
 ---
 
@@ -64,6 +64,7 @@ This repository is continuously updated as I explore new AI engineering, automat
 - LM Studio
 - Local LLMs
 
+
 ## Automation
 
 - Make.com
@@ -77,6 +78,7 @@ This repository is continuously updated as I explore new AI engineering, automat
 - Git
 - GitHub
 - VS Code
+- Docker
 
 ## Cloud & Productivity
 
@@ -84,6 +86,8 @@ This repository is continuously updated as I explore new AI engineering, automat
 - Google Workspace
 - Google Sheets
 - Webhooks
+- KoboToolbox
+
 
 ---
 
