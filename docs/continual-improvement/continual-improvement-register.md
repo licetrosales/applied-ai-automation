@@ -130,12 +130,151 @@ entries rather than silently changing the working standard.
 
 ---
 
+## CIR-002 — Add Standards Scope to Git Commit Convention
+
+### Identification
+
+**ID:** CIR-002
+
+**Category:** Engineering Practice / Version Control
+
+**Status:** Implemented
+
+**Priority:** Low
+
+**Risk:** Low
+
+**Size / Resources:** Small
+
+**Timescale:** Short
+
+**Action Owner:** Repository Owner
+
+---
+
+### Description
+
+Add a `standards` scope to the Git commit convention to cover
+repository-wide conventions and standards documents (e.g. the
+commit convention itself, coding standards).
+
+---
+
+### Reason / Rationale
+
+Commits that modify governance documents — such as the commit
+convention or future coding standards — did not have a scope that
+clearly identified them as repository-wide process changes,
+distinct from project-specific `docs` or `repo` changes.
+
+---
+
+### Expected Benefits
+
+- Clear identification of commits that modify repository-wide
+  process and governance documents.
+- Consistent scope taxonomy as the standards library grows.
+
+---
+
+### Related Metrics / Indicators
+
+- Consistent use of the `standards` scope for governance document
+  changes going forward.
+
+---
+
+### Supporting Documents
+
+- `docs/standards/git-commit-convention.md`
+
+---
+
+### Review Notes
+
+This CIR was recorded retroactively to preserve traceability
+between the convention's version history and its improvement
+register. The `standards` scope itself was already implemented in
+convention v1.2 (2026-08-28) prior to this entry being written.
+
+
+## CIR-003 — Add Security Scope to Git Commit Convention
+
+### Identification
+
+**ID:** CIR-003
+
+**Category:** Engineering Practice / Version Control
+
+**Status:** Implemented
+
+**Priority:** Low
+
+**Risk:** Low
+
+**Size / Resources:** Small
+
+**Timescale:** Short
+
+**Action Owner:** Repository Owner
+
+---
+
+### Description
+
+Add a `security` scope to the Git commit convention to support
+commits related to threat modeling, access control, secrets
+management, and infrastructure hardening.
+
+---
+
+### Reason / Rationale
+
+The repository now includes security-focused projects (e.g.
+`secure-field-data-pipeline`) where significant engineering
+decisions are security-specific: threat modeling, network exposure
+design, least-privilege access control, and secrets management.
+
+These changes did not fit cleanly under existing scopes and were
+previously at risk of being generically classified under `docs` or
+`repo`, reducing traceability of security engineering work
+specifically — which is a core focus area of this portfolio.
+
+---
+
+### Expected Benefits
+
+- Clear traceability of security-specific engineering decisions.
+- Easier filtering of security-related commit history for
+  portfolio review.
+- Consistent scope taxonomy as security-focused projects grow.
+
+---
+
+### Related Metrics / Indicators
+
+- Consistent use of the `security` scope across relevant commits
+  in `secure-field-data-pipeline` and future security projects.
+
+---
+
+### Supporting Documents
+
+- `docs/standards/git-commit-convention.md`
+
+---
+
+### Review Notes
+
+None yet.
+
+
 ## Document Version History
 
 | Version | Date | Author | Description of Change |
 |---|---|---|---|
 | 1.0 | 2026-07-20 | Repository Owner | Initial CIR created and CIR-001 added |
-
+| 1.1 | 2026-09-17 | Repository Owner | Add CIR-002 (retroactive) for `standards` scope; add CIR-003 for `security` scope |
 ---
 
 ## Approvals

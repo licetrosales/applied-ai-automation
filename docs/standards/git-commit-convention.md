@@ -57,6 +57,8 @@ Examples:
 
 `feat(storage): store classification results in Google Sheets`
 
+`feat(security): restrict service account to least-privilege file share access`
+
 A Make.com configuration can therefore be a `feat` even when no
 traditional source code was written.
 
@@ -89,6 +91,8 @@ Examples:
 
 `docs(repo): add Git commit convention`
 
+`docs(security): add STRIDE threat model and data classification`
+
 Important:
 
 Do not use `docs` simply because a low-code change is represented
@@ -120,6 +124,8 @@ Examples:
 `test(ai): validate classification JSON schema`
 
 `test(make): document workflow execution test`
+
+`test(security): validate outbound polling rejects invalid API token`
 
 ---
 
@@ -160,6 +166,8 @@ Examples:
 
 `chore(deps): update development dependencies`
 
+`chore(security): rotate exposed WireGuard private key`
+
 Use this category sparingly.
 
 ---
@@ -190,6 +198,9 @@ Scopes identify the area affected by the change.
 
 `monitoring`
 : Monitoring, logging, alerts, and observability.
+
+`security`
+: Security controls, threat modeling, access control, secrets management, or infrastructure hardening.
 
 ---
 
@@ -484,6 +495,10 @@ Use `chore`.
 
 `docs(architecture): document local LLM integration`
 
+`docs(security): document network exposure model for automation layer`
+
+`feat(security): implement outbound polling to avoid public webhook exposure`
+
 ---
 
 ## Relationship to Continual Improvement
@@ -511,3 +526,4 @@ CIR entries.
 | 1.0 | 2026-07-20 | Initial Git commit convention established |
 | 1.1 | 2026-08-28 | Add standardized verb glossary for commit descriptions |
 | 1.2 | 2026-08-28 | Add missing `standards` scope to Engineering/Repository Scopes |
+| 1.3 | 2026-09-17 | Add `security` scope to Technology/Component Scopes |
